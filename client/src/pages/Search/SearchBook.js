@@ -27,7 +27,7 @@ function SearchBook() {
     <>
       <Container fluid>
         <Row className="justify-content-center text-center bg-dark">
-          <Navbar bg="dark" variant="dark" className="justify-content-center">
+          <Navbar className="justify-content-center">
             <Form inline>
               <FormControl
                 type="text"

@@ -25,4 +25,8 @@ export default {
         console.log("error in save book: ", err);
       });
   },
+
+  getSavedBooks: function () {
+    return axios.get('/api/books')
+  },
 };
