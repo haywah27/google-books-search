@@ -31,3 +31,7 @@
     font-size: 20px;
 }
 
+.buttons:hover {
+    background-color: #9BA694!important;
+}
+

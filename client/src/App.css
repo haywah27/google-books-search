@@ -2,14 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Jura&family=Quicksand:wght@300&family=Raleway:wght@300&display=swap");
 
-html { 
-  background: url(assets/background.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 body {
+  background: url(assets/background.jpg) no-repeat center center fixed; 
+  background-size: cover;
   font-family: "Raleway", sans-serif;
 }

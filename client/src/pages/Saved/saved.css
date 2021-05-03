@@ -31,5 +31,15 @@
   background-color: #455950 !important;
 }
 .deleteButton {
-  background-color: #d96d55 !important;
+  background-color: #BB2020 !important;
 }
+
+.viewButton:hover {
+    background-color: #9BA694!important;
+}
+
+.deleteButton:hover{
+    background-color:  #d96d55!important;
+
+}
+

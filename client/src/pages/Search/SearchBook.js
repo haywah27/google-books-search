@@ -3,12 +3,17 @@ import {
   Container,
   Row,
   Navbar,
+  Jumbotron,
   Form,
   FormControl,
   Button,
 } from "react-bootstrap";
+
+import "./searchBook.css"
 import API from "../../utils/API";
+
 import DisplayResults from "../../components/SearchResults/DisplayResults";
+
 
 function SearchBook() {
   const [queryState, setQueryState] = useState("");
@@ -25,21 +30,25 @@ function SearchBook() {
   }
   return (
     <>
-      <Container fluid>
-        <Row className="justify-content-center text-center bg-dark">
-          <Navbar className="justify-content-center">
-            <Form inline>
+      <Container fluid className="pageContainer">
+          <Jumbotron className="jumbotronContainer">
+            <h1>Welcome!</h1>
+            <hr />
+            <h4>Use the search box to find information about specific books.</h4>
+            <h3>OR</h3>
+            <h4>Navigate to the Saved Books tab to view any saved books.</h4>
+            <Form inline className="formBox ">
               <FormControl
                 type="text"
+                size="lg"
                 placeholder="Search Book"
                 onChange={(event) => setQueryState(event.target.value)}
               />
-              <Button variant="info" onClick={searchButtonClick}>
+              <Button className="searchButton" onClick={searchButtonClick}>
                 Search
               </Button>
             </Form>
-          </Navbar>
-        </Row>
+          </Jumbotron>
       </Container>
 
       {searchReturn.map((book) => {
