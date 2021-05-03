@@ -23,7 +23,7 @@ function DisplayResults(props) {
           <Button className="buttons" id={props.id} onClick={handleSaveBook}>
             Save Book
           </Button>
-          <Button className="buttons" href={props.link}>
+          <Button className="buttons" href={props.link} target="_blank">
             View Book
           </Button>
           <h1>Title: {props.title}</h1>

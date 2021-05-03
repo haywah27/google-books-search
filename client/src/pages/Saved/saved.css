@@ -1,5 +1,16 @@
-.find {
-  background-color: red !important;
+.titleJumbotron{
+    text-align: center;
+    border-radius: 20px;
+    background-color: #f2eedd;
+    color: #455950;
+    margin: auto;
+    margin-bottom: 25px!important;
+    padding: 40px;
+    width: 90%;
+    box-shadow: 0px 0px 30px 0px black;
+}
+.titleHeader{
+    font-size: 50px!important;
 }
 
 .pageContainer {
@@ -13,6 +24,7 @@
   background-color: #f2eedd;
   color: #455950;
   margin: auto;
+  margin-bottom: 25px!important;
   padding: 40px;
   width: 90%;
   box-shadow: 0px 0px 30px 0px black;

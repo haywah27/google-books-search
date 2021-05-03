@@ -43,7 +43,7 @@ function SavedBooks() {
         >
           Delete Book
         </Button>
-        <Button href={data.link} className="buttons viewButton">
+        <Button href={data.link} className="buttons viewButton" target="_blank">
           View Book
         </Button>
 
@@ -61,10 +61,12 @@ function SavedBooks() {
 
   return (
     <Container className="pageContainer">
-    {displaySavedBooks}
-      </Container>
-  )
- 
+      <Jumbotron className="titleJumbotron">
+        <h1 className="titleHeader">Saved Books</h1>
+      </Jumbotron>
+      {displaySavedBooks}
+    </Container>
+  );
 }
 
 export default SavedBooks;

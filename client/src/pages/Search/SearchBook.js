@@ -1,15 +1,13 @@
 import React, { useState } from "react";
+import "./searchBook.css";
 import {
   Container,
-  Row,
-  Navbar,
   Jumbotron,
   Form,
   FormControl,
   Button,
 } from "react-bootstrap";
 
-// import "./searchBook.css"
 import API from "../../utils/API";
 
 import DisplayResults from "../../components/SearchResults/DisplayResults";
