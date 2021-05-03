@@ -14,7 +14,7 @@ Router.get("/api/books", async (req, res) => {
     });
 });
 
-Router.post("/book", (req, res) => {
+Router.post("/api/books", (req, res) => {
   try {
     console.log("new book: ", req.body);
     Book.create(req.body).then((res) => console.log(res));

@@ -1,9 +1,28 @@
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   searchBook: function (searchedTitle) {
     return axios.get(
-        `https://www.googleapis.com/books/v1/volumes?q=${searchedTitle}`
-      )
+      `https://www.googleapis.com/books/v1/volumes?q=${searchedTitle}`
+    );
+  },
+
+  saveBook: function (data) {
+    return axios
+      .post("/api/books", {
+        id: data.id,
+        title: data.title,
+        author: data.author,
+        image: data.image,
+        description: data.description,
+        link: data.link,
+      })
+      .then(function (response) {
+        console.log("saved book", response);
+        alert("Book saved");
+      })
+      .catch(function (err) {
+        console.log("error in save book: ", err);
+      });
   },
 };

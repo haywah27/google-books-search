@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
   Container,
   Row,
-  Col,
   Navbar,
   Form,
   FormControl,
@@ -49,7 +48,7 @@ function SearchBook() {
                 id={book.id}
                 title={book.volumeInfo.title}
                 author={book.volumeInfo.authors}
-                image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : console.log('no image')} 
+                image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : console.log("no image to display")} 
                 description={book.volumeInfo.description}
                 link={book.volumeInfo.infoLink}
             />
