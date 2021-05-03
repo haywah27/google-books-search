@@ -4,8 +4,8 @@ import { Navbar, Nav } from "react-bootstrap";
 function Navigation() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Navbar.Brand>
-        <h1>Google Books Search Tool</h1>
+      <Navbar.Brand href="/">
+        <h2 className="title" >Google Books Search Tool</h2>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
