@@ -11,10 +11,10 @@ function Navigation() {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Link href="/">
-            <h4>Search For Books</h4>
+            <h4>Home</h4>
           </Nav.Link>
           <Nav.Link href="saved-books">
-            <h4>View Saved Books</h4>
+            <h4>Saved Books</h4>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

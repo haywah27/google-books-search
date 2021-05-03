@@ -8,7 +8,7 @@ import {
   Button,
 } from "react-bootstrap";
 import API from "../../utils/API";
-import DisplayResults from "../../components/SearchResults/SearchResults"
+import DisplayResults from "../../components/SearchResults/DisplayResults";
 
 function SearchBook() {
   const [queryState, setQueryState] = useState("");
@@ -43,17 +43,21 @@ function SearchBook() {
       </Container>
 
       {searchReturn.map((book) => {
-            return(                
-            <DisplayResults
-                id={book.id}
-                title={book.volumeInfo.title}
-                author={book.volumeInfo.authors}
-                image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : console.log("no image to display")} 
-                description={book.volumeInfo.description}
-                link={book.volumeInfo.infoLink}
-            />
-            )
-        })}
+        return (
+          <DisplayResults
+            id={book.id}
+            title={book.volumeInfo.title}
+            author={book.volumeInfo.authors}
+            image={
+              book.volumeInfo.imageLinks
+                ? book.volumeInfo.imageLinks.thumbnail
+                : console.log("no image to display")
+            }
+            description={book.volumeInfo.description}
+            link={book.volumeInfo.infoLink}
+          />
+        );
+      })}
     </>
   );
 }
