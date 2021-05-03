@@ -1,0 +1,54 @@
+.pageContainer {
+    justify-content: center !important;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: transparent;
+  }
+  
+  .jumbotronContainer {
+    justify-content: center !important;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #f2eedd;
+    color: #455950;
+    margin: auto;
+    padding: 40px;
+    width: 90%;
+    box-shadow: 0px 0px 30px 0px black;
+  }
+  
+  input {
+    text-align: center;
+  }
+  
+  .formBox {
+    justify-content: center !important;
+    padding-top: 40px;
+    margin: auto;
+    max-width: 400px;
+  }
+  
+  .searchButton {
+      color: #F2EEDD;
+      background-color: #455950;
+      border: none;
+      height:46px;
+      margin-left: 10px !important;
+      font-size: 20px;
+  }
+  
+  .searchButton:hover{
+      background-color: #9BA694!important;
+  }
+  
+  @media (max-width: 575px) {
+    .searchButton {
+      margin-top: 10px !important;
+      color: #F2EEDD;
+      background-color: #455950;
+      border: none;
+      padding: 1rem;
+      font-size: 20px;
+    }
+  }
+  
