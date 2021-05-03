@@ -1,7 +1,7 @@
 import React from "react";
 import API from "../../utils/API";
 import { Jumbotron, Button, Container } from "react-bootstrap";
-import "./search.css";
+import "./displayResults.css";
 
 function DisplayResults(props) {
   function handleSaveBook() {
@@ -19,20 +19,20 @@ function DisplayResults(props) {
   return (
     <>
       <Jumbotron className="jumboContainer">
-        <Button variant="info" id={props.id} onClick={handleSaveBook}>
+        <Button className="buttons" id={props.id} onClick={handleSaveBook}>
           Save Book
         </Button>
-        <Button href={props.link} variant="info">
+        <Button className="buttons" href={props.link} >
           View Book
         </Button>
         <h1>Title: {props.title}</h1>
         <h2>Author(s): {props.author}</h2>
         <hr />
-        <img src={props.image} alt="book cover"></img>
+        <img className="imageShadow"src={props.image} alt="book cover"></img>
         <hr />
         <h2>Description</h2>
         <hr />
-        <p>{props.description}</p>
+        <p className="bookDesc">{props.description}</p>
       </Jumbotron>
     </>
   );

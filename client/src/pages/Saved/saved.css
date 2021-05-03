@@ -1,0 +1,35 @@
+.find {
+  background-color: red !important;
+}
+
+.pageContainer {
+  justify-content: center !important;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.savedContainer {
+  border-radius: 20px;
+  background-color: #f2eedd;
+  color: #455950;
+  margin: auto;
+  padding: 40px;
+  width: 90%;
+  box-shadow: 0px 0px 30px 0px black;
+}
+
+.buttons {
+  float: right;
+  margin: 5px;
+  color: #f2eedd;
+  border: none;
+  padding: 1rem;
+  font-size: 20px;
+}
+
+.viewButton {
+  background-color: #455950 !important;
+}
+.deleteButton {
+  background-color: #d96d55 !important;
+}

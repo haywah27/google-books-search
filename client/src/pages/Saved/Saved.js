@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Jumbotron, Button } from "react-bootstrap";
 import API from "../../utils/API";
+import "./saved.css";
 
 function SavedBooks() {
   const [savedBookState, setSavedBookState] = useState([]);
@@ -34,27 +35,36 @@ function SavedBooks() {
 
   const displaySavedBooks = savedBookState.map((data) => (
     <>
-      <Container>
-        <Jumbotron>
-          <Button href={data.link} variant="info">
-            View Book
-          </Button>
-          <Button variant="danger" id={data.id} onClick={handleDeleteBook}>Delete Book</Button>
-          <h1>Title: {data.title}</h1>
-          <h2>Author(s): {data.author}</h2>
-          <hr />
-          <img src={data.image} alt="book cover"></img>
-          <br />
-          <br />
-          <h2>Description</h2>
-          <hr />
-          <p>{data.description}</p>
-        </Jumbotron>
-      </Container>
+      <Jumbotron className="savedContainer">
+        <Button
+          className="buttons deleteButton"
+          id={data.id}
+          onClick={handleDeleteBook}
+        >
+          Delete Book
+        </Button>
+        <Button href={data.link} className="buttons viewButton">
+          View Book
+        </Button>
+
+        <h1>Title: {data.title}</h1>
+        <h2>Author(s): {data.author}</h2>
+        <hr />
+        <img className="imageShadow" src={data.image} alt="book cover"></img>
+        <hr />
+        <h2>Description</h2>
+        <hr />
+        <p className="bookDesc">{data.description}</p>
+      </Jumbotron>
     </>
   ));
 
-  return <>{displaySavedBooks}</>;
+  return (
+    <Container className="pageContainer">
+    {displaySavedBooks}
+      </Container>
+  )
+ 
 }
 
 export default SavedBooks;

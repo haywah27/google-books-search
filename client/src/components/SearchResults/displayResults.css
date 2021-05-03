@@ -1,0 +1,26 @@
+.jumboContainer {
+    border-radius: 20px;
+    background-color: #F2EEDD;
+    color:#455950;
+    margin-top: 3rem;
+    padding: 40px;
+    width: 90%;
+    box-shadow: 0px 0px 30px 0px black;
+}
+.buttons{
+    float: right;
+    margin: 5px;
+    color: #F2EEDD;
+    background-color: #455950;
+    border: none;
+    padding: 1rem;
+    font-size: 20px;
+}
+
+.imageShadow {
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+.bookDesc{
+    font-size: 20px;
+}
