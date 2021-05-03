@@ -26,5 +26,14 @@ Router.post("/api/books", (req, res) => {
   }
 });
 
+Router.delete("/api/books/:id", async (req, res) => {
+  Book.findOneAndRemove({ id: req.params.id }, req.body, function (err, data) {
+    if (!err) {
+      console.log("Book has been deleted");
+    } else {
+      console.log("something went wrong when trying to delete: ", err);
+    }
+  });
+});
 
 module.exports = Router;

@@ -21,13 +21,25 @@ function SavedBooks() {
     });
   }, []);
 
+  const handleDeleteBook = (event) => {
+    event.preventDefault();
+    alert("Book has been deleted");
+    API.deleteBook(event.target.id);
+    setSavedBookState(
+      savedBookState.filter((book) => {
+        return book.id !== event.target.id;
+      })
+    );
+  };
+
   const displaySavedBooks = savedBookState.map((data) => (
     <>
       <Container>
         <Jumbotron>
-          <Button href={data.link} className="primary">
+          <Button href={data.link} variant="info">
             View Book
           </Button>
+          <Button variant="danger" id={data.id} onClick={handleDeleteBook}>Delete Book</Button>
           <h1>Title: {data.title}</h1>
           <h2>Author(s): {data.author}</h2>
           <hr />
@@ -39,15 +51,10 @@ function SavedBooks() {
           <p>{data.description}</p>
         </Jumbotron>
       </Container>
-
     </>
   ));
 
-  return (
-    <>
-      {displaySavedBooks}
-    </>
-  );
+  return <>{displaySavedBooks}</>;
 }
 
 export default SavedBooks;

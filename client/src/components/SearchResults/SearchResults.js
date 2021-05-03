@@ -19,10 +19,10 @@ function DisplayResults(props) {
     <>
       <Container>
         <Jumbotron>
-          <Button className="primary" id={props.id} onClick={handleSaveBook}>
+          <Button variant="info" id={props.id} onClick={handleSaveBook}>
             Save Book
           </Button>
-          <Button href={props.link} className="primary">
+          <Button href={props.link} variant="info">
             View Book
           </Button>
           <h1>Title: {props.title}</h1>

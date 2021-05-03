@@ -34,7 +34,7 @@ function SearchBook() {
                 placeholder="Search Book"
                 onChange={(event) => setQueryState(event.target.value)}
               />
-              <Button variant="primary" onClick={searchButtonClick}>
+              <Button variant="info" onClick={searchButtonClick}>
                 Search
               </Button>
             </Form>

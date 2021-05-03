@@ -27,6 +27,17 @@ export default {
   },
 
   getSavedBooks: function () {
-    return axios.get('/api/books')
+    return axios.get("/api/books");
+  },
+
+  deleteBook: function (id) {
+    return axios
+      .delete(`/api/books/${id}`)
+      .then(function (response) {
+        console.log("deleted this id: ", response);
+      })
+      .catch(function (err) {
+        console.log("error in delete book: ", err);
+      });
   },
 };
