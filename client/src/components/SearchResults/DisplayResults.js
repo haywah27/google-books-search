@@ -18,22 +18,24 @@ function DisplayResults(props) {
   }
   return (
     <>
-      <Jumbotron className="jumboContainer">
-        <Button className="buttons" id={props.id} onClick={handleSaveBook}>
-          Save Book
-        </Button>
-        <Button className="buttons" href={props.link} >
-          View Book
-        </Button>
-        <h1>Title: {props.title}</h1>
-        <h2>Author(s): {props.author}</h2>
-        <hr />
-        <img className="imageShadow"src={props.image} alt="book cover"></img>
-        <hr />
-        <h2>Description</h2>
-        <hr />
-        <p className="bookDesc">{props.description}</p>
-      </Jumbotron>
+      <Container className="pageContainer">
+        <Jumbotron className="jumboContainer">
+          <Button className="buttons" id={props.id} onClick={handleSaveBook}>
+            Save Book
+          </Button>
+          <Button className="buttons" href={props.link}>
+            View Book
+          </Button>
+          <h1>Title: {props.title}</h1>
+          <h2>Author(s): {props.author}</h2>
+          <hr />
+          <img className="imageShadow" src={props.image} alt="book cover"></img>
+          <hr />
+          <h2>Description</h2>
+          <hr />
+          <p className="bookDesc">{props.description}</p>
+        </Jumbotron>
+      </Container>
     </>
   );
 }

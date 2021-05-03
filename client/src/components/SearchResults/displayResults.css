@@ -1,8 +1,14 @@
+.pageContainer {
+    justify-content: center !important;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
 .jumboContainer {
     border-radius: 20px;
     background-color: #F2EEDD;
     color:#455950;
-    margin-top: 3rem;
+    margin: auto;
     padding: 40px;
     width: 90%;
     box-shadow: 0px 0px 30px 0px black;
@@ -24,3 +30,4 @@
 .bookDesc{
     font-size: 20px;
 }
+
