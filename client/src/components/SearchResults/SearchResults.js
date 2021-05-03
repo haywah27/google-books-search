@@ -22,12 +22,12 @@ function DisplayResults(props) {
           <Jumbotron>
             <Button
               className="primary"
-              type="submit"
               id={props.id}
               onClick={clickID}
             >
               Save Book
             </Button>
+            <Button href={props.link} className="primary">View Book</Button>
             <h1>Title: {props.title}</h1>
             <h2>Author(s): {props.author}</h2>
             <hr />
