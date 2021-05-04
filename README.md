@@ -1,5 +1,5 @@
 # Google Books Search Tool
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-5C8BB3)](https://choosealicense.com/licenses/mit/)
 
 ## Link to Live Page
 ### https://surfing-book-search.herokuapp.com/
