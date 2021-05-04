@@ -15,7 +15,7 @@ This app uses the Google Books API to find and display books in their database. 
 * React Bootstrap
 * Express.js
 * Node JS
-* MongoDB
+* Mongoose
 * Google Books API
 
 ## Contributing
