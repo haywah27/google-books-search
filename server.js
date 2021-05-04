@@ -5,6 +5,8 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+require('dotenv').config()
+
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -23,7 +25,7 @@ app.get("*", (req, res) => {
 });
 
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/bookLibrary", {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
